@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f{
+            background-color:tomato;
+            height:1000px;
+            background-image:url(imag/wall.jpg);
+            background-repeat:repeat-y; /* burda round, space no-repeat secenegi,repeat-y  repeat-x,repeat felan secenekler var*/
+            background-size: 300px;
+            border-radius: 2cm;
+            background-attachment:fixed;/* bunun özelligi aşagı yukarı
+            scroll yaptıgında fixed sabit orda kalır*/
+            background-position: right bottom;
+        }
+        .s{
+            /* yukarı da yaptıklarını tek satırda da yapabilirdin*/
+            height:500px;
+
+            background:green url(imag/scarlet.jpg) no-repeat center bottom fixed;
+            background-size: 300px 300px;
+        }
+        .t{
+            height: 500px;
+            background-image: url(imag/thor.jpg);
+            background-repeat: no-repeat;
+            background-color:chartreuse;
+            background-attachment: scroll;
+            background-size: 300px 300px; 
+            /* 
+            burda fotonun size ini belirliyoruz,cover,contain ,auto 
+            yada x ve y eksenine göre 500px 300px gibi
+            
+            */
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <p class="f">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, incidunt.</p>
+     <br>
+     <p class="s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, incidunt.</p>
+     <br>
+     <p class="t">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, incidunt.</p>
+
+</html>

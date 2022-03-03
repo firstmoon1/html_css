@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            visibility:; 
+            /*
+            collapse ve hidden de yazı silinir yer kapsadıgı durur.
+            visible da ise görünür yapar default da bu vardır.
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        27.display dosyasında display:none ile 1 tek farkı vardır  ,o fark şudur;
+        visibility de yazılar gözükmez ama silinmezde orda yer kaplar gene ,ama display:none da hem içerik hemde kapsadıgı yeri siler.
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, a?</p>
+    <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, alias!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, a?</p>
+</body>
+</html>

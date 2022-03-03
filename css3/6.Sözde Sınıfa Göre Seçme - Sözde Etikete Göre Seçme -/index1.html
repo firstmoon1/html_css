@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bu p içindir-->
+    <style>
+        p::first-line{
+            color:red;
+            background-color:yellow
+        }
+        p:after{
+            background: aqua;
+            content:"anna bell"
+        }
+    </style>
+
+    <!--bu a içindir-->
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a:link{
+            color: red; /* eger  https://www.google.com12321 
+            gibi bir şey yazarsan kırmızı gözükür initially ,
+            https://www.google.com yazarsanda mavi gözükür.
+             */
+        }
+        a:hover{
+            color:hotpink;
+        }
+        a:active{
+            color:green;
+        }
+       
+       
+
+
+
+    </style>
+    </head>
+
+
+    <body>
+        <!--
+        before ,after olayları var  p::after dediginde ,world! un sonuna ne yazdıysan
+        onu ekler ,before da ise hello nun basına ekler.
+        p::before yazarsan aqua yerine none yazarsan background yellow olur
+         -->
+        <p >  hello <br> world!</p>    
+        
+        <!--
+            bu text-decoration:none in olayı  google yazısının altındaki cizgiyi kaldırmak
+
+            a:link{ } ile a daki google yazısının ilk rengini verirsin
+            bu link nedense işe yaramıyor anlamadım
+            a:hover{ } üzerine geldiginde bu google in rengisi degiştirir
+
+            a:active{ } tıkladıgında ve basılı tuttugunda rengi degişir
+
+            a:visited{ } tıklayıp google ye gittiginde ve tekrar bu sayfaya geri geldiginde rengi degişir
+        -->
+        <a href="https://www.google.com">google</a>
+
+
+
+    </body>
+    </html>

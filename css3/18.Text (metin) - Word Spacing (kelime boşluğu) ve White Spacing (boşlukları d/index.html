@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            word-spacing: 1cm;  /*gives space amongs words */
+        }
+        .p2{
+            white-space: pre; 
+            /* bu p nin içinde ne yazarsan nasıl yazarsan 
+            o şekilde gösterir 
+            */
+        }
+        .p3{
+            white-space: pre-line;
+            /* buda line lara önem veriyor ama line içindeki 
+            boşlukları görmezden gelir
+             */
+        }
+        .p4{
+            white-space: pre-wrap;
+            /*
+            buda pre gibi boşluklara önem verir ,line lara önem verir
+            */
+        }
+        .p5{
+
+            white-space: nowrap;
+            /* 
+            buda html css nin default ta kabul ettigi white space özelligi
+            kelimeler arasında 1 boşluk bırakır 
+            */
+        }
+    </style>
+</head>
+<!---->
+<body>
+
+    <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, accusamus.</p>
+    <br>
+    
+
+    <p class="p2">Lorem ipsum       dolor,     sit amet
+         conse                 asd
+         ctetua sdsd  das asd as das dasdas
+         r ad             asd
+         ipis         icing elit. At, accusamus.</p>
+    <br>
+
+
+    <p class="p3">Lorem                     ipsum 
+        dolor, sit                  amet consectetur 
+        adipisicing elit.        At, accusamus.</p>
+    <br>
+
+ 
+    <p class="p4">Lorem                    ipsum
+         dolor, sit amet co             nsecte    tur a
+         dipi   sicing elit. At, accusamus.</p>
+    <br>
+
+    <p class="p5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nemo, laudantium omnis quod maiores iusto autem beatae id obcaecati!</p>
+
+    <pre>Lorem ipsum                    dolor00 
+sit amet consectetur adipi
+        sicing elit. Repreh enderit, minus?
+    </pre>
+</body>
+</html>

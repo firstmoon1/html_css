@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+            height:300px;
+            color:orangered;
+            text-align: center;
+            
+        }
+        #divf{
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(imag/stark.jpg);
+            background-size:100% 300px; /* x ve y ekseni sıralamaya göre */
+        }
+        #pf{
+            font-size: large;
+            background-color: lightgreen;
+            text-shadow: 0px 0px 2px black;
+        }
+        .exp1{
+            
+            font-weight: bold;
+            float:left;
+            width:100%;
+        }
+        .exp2{
+            float:left;
+            width:33%;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 10px;
+        }
+        .exp2:nth-child(1){
+            background-repeat: no-repeat;
+            background-image: url(imag/scarlet.jpg);
+            background-size: 100% 300px;
+        }
+        .exp2:nth-child(1) p{ /*bu nth-child 1 2 3 olayı sıralama aynı cinsten exp2 ler var onları sırlamada kullanılıyor */
+            color:aqua;
+        }
+        .exp2:nth-child(2){
+            background-repeat: no-repeat;
+            background-image: url(imag/thor.jpg);
+            background-size: 100% 300px;
+        }
+        .exp2:nth-child(2) p{
+            color:green;
+        }
+        .exp2:nth-child(3){
+            background-repeat: no-repeat;
+            background-image: url(imag/gülhinal.jpg);
+            background-size: 100% 300px;
+               
+        }
+        .exp2:nth-child(3) p{
+            color:purple;
+        }
+        #divs{
+            clear:both;
+            background-color: orangered;
+            padding-top:30px;
+            color:black;
+            
+        }
+        #divs img{
+            margin-top: 20px;
+            border:dashed black 6px;
+        }
+
+        #divs p{
+            white-space: pre-line;
+           text-transform: capitalize;            
+        }
+        #divs p::first-line {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size:large;
+        }
+        @media screen and (max-width:900px){
+            .exp2{
+                width:100%;
+            }
+            #divs{
+                margin-top: 900px;
+                height:350px;
+            }
+            #divs img{
+                padding-top: 20px;
+            }
+
+        }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="divf">
+        <span id="pf"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tempora?
+        </span>
+    </div>
+
+    <div class="exp1">
+        
+        <div class="exp2">
+            Lorem ipsum dolor sit amet.
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quisquam.</p>
+        </div>
+
+        <div class="exp2">
+            Lorem ipsum dolor sit amet.
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quisquam.</p>
+        </div>
+
+        <div class="exp2">
+            Lorem ipsum dolor sit amet.
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quisquam.</p>
+        </div>
+
+    </div >
+        
+    <div id="divs">
+        <img src="imag/thor.jpg" alt="">
+        <p >Lorem ipsum dolor sit amet. 
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    
+</body>
+</html>

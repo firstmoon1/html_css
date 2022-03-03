@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+          border-collapse: collapse;
+          empty-cells: hide;  /* burda işe yaramaz */
+        }
+        .b{
+            border-collapse: separate;
+            border-spacing:40px 20px;
+            caption-side: bottom;
+            empty-cells: hide;  /*  için boş olan kutucugu sildik bu yolla  */
+        }
+        .b td{
+            width:150px;
+        }
+
+        .c{
+            border-collapse: separate;
+            border-spacing: 50px 50px;
+            border:3px solid red;
+            empty-cells: hide;
+            table-layout: auto; /* auto da iken bu içindeki yazıya göre  kutucugu genişletip daraltiyor. 
+            fixed yaptıgımız zaman  yazı taşşa fazla gelse gibi kutucuk 'un kalıbı aynı kalır.*/
+        }
+        .c td{
+            border:2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1" class="a" >
+
+        <tr>
+            <td> empty </td>
+            <td> void  </td>
+            <td>   </td>
+        </tr>
+        <tr>
+           
+            <td> empty </td>
+            <td> void  </td>
+            <td> pain  </td>
+        </tr>
+    </table>
+    
+    <br>  <br>
+    <table border="1" class="b" >
+        <caption>başlık verme yeri style da caption ile belirleniyor
+        </caption>
+        <tr>
+            <td> empty </td>
+            <td> void  </td>
+            <td> pain  </td>
+        </tr>
+        <tr> 
+            <td> empty  </td>         
+            <td>  void </td>
+            <td> pain  </td>
+        </tr>
+    </table>
+
+    
+    <br>  <br>
+    <table border="1" class="c" >
+        <caption>başlık verme yeri style da caption ile belirleniyor
+        </caption>
+        <tr>
+            <td> empty </td>
+            <td> void dsfsdfsdfsdfdsfdssdfds </td>
+            <td> pain  </td>
+        </tr>
+        <tr> 
+            <td> empty  </td>
+            <td>   </td>
+            <td> pain dsf  </td>
+        </tr>
+    </table>
+</body>
+</html>

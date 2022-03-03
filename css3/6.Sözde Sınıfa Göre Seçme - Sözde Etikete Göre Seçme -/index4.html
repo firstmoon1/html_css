@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[title^="bu"]{
+            color:red;
+        }
+        p[title$="world"]{
+            color:blue;
+            background-color:chocolate
+        }
+        p[title~="paragraf"]{
+            background-color:aqua;
+        }
+        
+        a[href="https://www.google.com"][target="_blank"]:hover{
+            color:green;
+        }
+       
+        a[href="https://www.youtube.com"]:active{
+        
+            color : cyan;
+            font-size:40px;
+        }
+        a[href="https://www.google.com"]:hover{
+            color:brown;
+            font-size:40px;
+        }
+    </style>
+
+</head> 
+<!--
+    href="https://www.youtube.com"
+-->
+<body>
+<!-- 
+    özellige göre secim yapıyoruz
+
+    mesela p[title^="bu"] yaparsam title ları olan
+    ve başında bu yazısı olanlar kırmızı olur
+    ilk kelimeler için ^= yapılır , 
+    son kelime için ise $= yapılır 
+    ortalardaki yani aralardaki kelimeler içinde ~= yapılır
+
+-->
+    <p title="bu bir paragraftır">paragraf 1</p>
+    <p title="bu bir paragraf degildir">paragraf 2</p>
+    <p title="bir paragraf manyak">paragraf 3</p>
+    <p title="hello world" >paragraf 4</p>
+    <p title="empty world" >paragraf 5</p>
+
+    <a href="https://www.google.com" target="_blank">google</a>
+    <br> <br>
+    <a href="https://www.youtube.com" target="_blank">youtube</a>
+    <br> <br>
+    <a href="https://www.google.com" >google</a>
+</body>
+</html>

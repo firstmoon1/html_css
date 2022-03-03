@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+<style>
+    #divsizp ~ div{
+        color:blue;
+    }
+</style>
+
+    </head>
+    <!--
+         bu #divsizp + div{   }
+         bunun olayıda  bu sınıfsız paragraf yazısından (p  komutunun) sonra gelen ilk div 'in p lerini blue yap demiş oluruz
+        -->
+    <body>
+        <!--
+            bu  #divsizp ~ div nin olayı şudur;
+            kendisi ile aynı akranda,konumda olanlara kendisi haric  
+            etki eder, c programdaki link list olayı gibi yada c++ daki
+            class lar gibi düşün, parent child ilişkisi var 
+
+            ve bu id nin konumundakinden sonrakilerde işe yarıyor illa 
+            altta olucak.
+        -->
+        <div>
+            <p>sınıfsız divli paragraf</p>
+        </div>
+        <p id="divsizp">sınıfsız paragraf</p>
+
+        <div class="container">
+            1 inci div in yeri
+           <p class="parag1">
+               pag1
+           </p>
+           <p class="parag2">
+               pag2
+           </p>
+           <p class="parag3">
+               pag3
+           </p>
+       </div>
+       
+       <div>
+           <h2>2 inci div</h2>
+       </div>
+
+    </body>
+    </html>

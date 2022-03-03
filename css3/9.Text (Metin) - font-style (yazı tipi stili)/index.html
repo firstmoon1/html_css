@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        bu font-style: dakiler;
+        initial= ilk hali ,otomatik de ne varsa onu kullanır
+        unset= yazı stili vermiyorsun anlamı katar,initialda ne varsa onu kullanır
+        inherit= parent-child iliskisi var, üstündeki yanibaglı oldugu etiketteki yazı stilini alır
+        italic felan zaten biliyorsun
+        oblique bu da bir ceşit yazı türü
+    -->
+    <p style="font-style: initial;">
+        initial <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, ullam?
+    </p>
+    <p style="font-style: unset;">
+      unset <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, ullam?
+    </p>
+    <p style="font-style: italic;">
+       italic <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, ullam?
+    </p>
+    <div style="font-style: oblique;">
+        <p style="font-style:inherit;">
+         inherit -> div'deki oblique aldı <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ullam?
+        </p>
+    </div>
+</body>
+</html>

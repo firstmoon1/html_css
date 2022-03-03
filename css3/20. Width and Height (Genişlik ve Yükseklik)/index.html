@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width:300px;/* 300 de kısıtlıyor 301 olamaz mesela aşagıda500 yazıyor olmasına ragmen*/
+            max-height: 300px;
+        }
+        #a{
+            border:20px solid red;
+            height:500px;
+            width:500px;
+            
+            /* div ler block elementtir 
+            height:200px;
+            width:200px;
+
+            */
+        }
+        #b{
+            border:5px solid red;
+           
+            height:500px;
+            width:500px;
+
+            /*
+             height: 100px;
+            width:200px;
+            max-width,max-height bunlar alınabilecek max degeri belirtir üstüne gecemez
+            bunlarin min olanları minimum alınabilecek deger
+            */
+        }
+        a{
+            border:10px solid green;
+            display: block;
+            /*
+             a lar da inline elementtir  
+             bunlari display ile block etiketlere cevirebiliriz. 
+            */ 
+        }
+        .s{ 
+            border: firebrick 10px solid;
+           max-width:100px;
+            max-height:300px;
+            height:100cm;
+        }
+        .f{
+            border: blueviolet 20px solid;
+            min-width:15.5cm;
+            min-height:5cm;
+            height:2cm;/* işe yaramaz ki min height width var*/
+            width:33cm; /* 33cm olur max sınırı yok ,min sınırı var*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="a">
+
+    </div>
+    <br>
+    <div id="b">
+
+    </div>
+    <br>
+    <a href="#">google</a>
+    <a href="#">youtube</a>
+
+    <p class="f"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, culpa.</p>
+    
+    <p class="s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aut?</p>
+</body>
+</html>

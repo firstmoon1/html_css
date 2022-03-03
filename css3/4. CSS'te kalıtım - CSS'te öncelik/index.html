@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: green !important ;
+        }
+        .first{
+            color:red ;
+        } 
+        .second{
+            color:blue !important;
+            text-align : center;
+        }   
+        .third{
+            color:rebeccapurple;
+            text-align :left;
+        }
+        #eb{
+            background: rgb(255, 238, 0);
+            color:white;
+            font-size : 25px;
+        }
+        div .ka{
+            color:red !important;
+           
+        }
+        .ka{
+            color:rgb(255, 255, 255) !important;
+            background-color:aqua
+        }
+        
+    </style>
+<!-- yukarıda div  .ka ve .ka arasında neden kırmızı ve indigo  secim yaparken kırmızı dersen ,öncelik var , mouse'i .ka nın üzerine tuttugunda 
+(0,1,0) görürsün.
+-->
+</head>
+<body>
+    <!-- 
+        öncelik bu şekilde;
+        id  >  class > p  > body .... felan
+        eger  bir p paragrafının içine id verdin id="gs" sytle açtın
+        head içinde ve #gs{ color:red} dedin mesela sen p içinde blue dedin
+        mesela,öncelikgi p 'ye vermek istiyorsak !important yazısı yazılır p nin içine
+        important i birden fazla kullanırsan farklı yerde gene aynı sıralama olur id > class > p >body
+    -->
+
+    <h1>kadınlar</h1>
+    <p id="eb" class="first"  >ebru</p>
+    <p class="first" >anna bell</p>
+    <p class="second" >brandi love</p>
+    <p class="second" >rae lil</p>
+    <p  class="third">ceylan abla</p>
+    <p class="third">lulu chu </p>
+    <p> ilkay</p>
+
+    <br>
+
+    <div class="container">
+        <p class="ka">empty</p>
+        <p class="ka">void</p>
+        <p class="ka">air</p>
+    </div>
+
+</body>
+</html>

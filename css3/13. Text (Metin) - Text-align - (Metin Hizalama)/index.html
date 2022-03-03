@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            border:1px solid red;
+            height:400px;
+        }
+
+        .first{
+            display:table-cell;
+            vertical-align:middle ;
+        }
+        .second{
+            display:table-cell;
+            vertical-align:bottom ;
+        }
+        .third{
+            text-align: justify;/* text'i düzenliyor hani absürt gözükmüyor*/
+        }
+    </style>
+</head>
+<!--
+    3 ceşit var  text-align, vertical-align, horizontal-align
+    genellikle text-align kullanılıyor, bu vertical ve horizontal ın tabloyani hücre lazın yukarıdaki
+    p lerde işe yaramaz
+    vertical da text i yukarı aşagı sub sup center bottom top yerleştirmemizi saglıyor horizontalda yatayda yapıyor
+    
+-->
+<body>
+
+    <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eos amet soluta similique quam itaque exercitationem necessitatibus voluptatibus temporibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eos amet soluta similique quam itaque exercitationem necessitatibus voluptatibus temporibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eos amet soluta similique quam itaque exercitationem necessitatibus voluptatibus temporibus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eos amet soluta similique quam itaque exercitationem necessitatibus voluptatibus temporibus.
+
+    </p >
+    <br>
+    <p class="second">Lorem ipsum dolor sit amet.</p>
+
+    <p class="third">Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, cum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus ex, accusamus aperiam veritatis reiciendis provident libero. Et, nobis sunt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit consequatur cumque quasi blanditiis doloremque aliquid tenetur fugiat accusamus perferendis.
+    </p>
+</body>
+</html>

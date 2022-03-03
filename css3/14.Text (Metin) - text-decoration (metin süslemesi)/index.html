@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p{
+        font-size:20px;
+    }
+    .second{
+        text-decoration:overline;
+    }
+    #third{
+        text-decoration:underline;
+    }
+    .fourth{
+        text-decoration:underline overline; 
+    }
+    .bucuk{
+        text-decoration:underline;
+    }
+    .fiveth{
+        text-indent: 1cm; /* satır başında boşluk bırakıyor  */
+    }
+    #sixth{
+        text-decoration: none;
+        color:brown
+    }
+    a:link{
+        color:green; /* brown un önceligi var üzerine tut mouse görürsün (1,0,0) */
+        font-size:1cm;
+    }
+    #seventh{
+        text-decoration: overline underline  wavy red ; /*  wavy yerine dotted da diyebilirdin noktalı yani */
+    }
+</style>
+</head>
+<!--
+    text align underline,overline,line-through ,none,text-indent felan bunları görücez
+    alt cizgi, üst cizgi,ortadan cizgi, biz bunlari önceden başka şekilde gördük
+    alt cizgi <u> lorem10 </u> ile, orta cizgi del ile,üst görmedik
+-->
+<body>
+    <p style="text-decoration:line-through ;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quasi?
+    </p>
+
+    <p class="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa!
+    </p>
+    <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.
+    </p>
+    <p class="fourth">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quae.
+    </p>
+    <p>
+        <span class="bucuk"> Lorem ipsum dolor </span> sit amet consectetur adipisicing elit. Reiciendis, illo?
+    </p>
+    <p style="text-decoration: none;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, recusandae.
+    </p>
+    <p class="fiveth">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus atque quod numquam facilis quia voluptatum ex minus deserunt, aliquam dicta pariatur enim inventore incidunt optio, consequatur quidem libero sit eos?
+    </p>
+    
+    <a href="#" target="_blank" id="sixth" > anna bell</a>
+
+    <p id="seventh">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, fuga.
+    </p>
+</body>
+</html>

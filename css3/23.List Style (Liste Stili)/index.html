@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a{
+           list-style: none;
+        }
+        img{
+            width: 1.4cm;
+            height: 1.4cm;
+        }
+        
+        .b{
+            list-style-type:lower-greek;
+            list-style-position: inside;
+
+        }
+        .c{
+            list-style-type: circle;
+            list-style-position: outside;
+        }
+        .d{
+            list-style: none;
+        }
+        .d li::before{
+            content:'';
+            display:inline-block;
+            width: 50px;
+            height:50px;
+           background-image: url(imag//scarlet.jpg);
+           background-size: 100%;
+           background-repeat:no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="a">
+        family 1 bu benim yöntem ile yapılan
+        <li> <img src="imag/scarlet.jpg" alt=""> kadın 1</li>
+        <li > <img src="imag/scarlet.jpg"> erkek 1 </li>
+        <li> <img src="imag/scarlet.jpg" alt=""> cocuk 1</li>
+    </ul>
+    <ul class="b">
+        family 2
+        <li>kadın 2</li>
+        <li>erkek 2</li>
+        <li>cocuk 2</li>
+    </ul>
+    <ul class="c"> 
+        family 3        
+        <li>kadın 3</li>
+        <li>erkek 3</li>
+        <li>cocuk 3</li>
+    </ul>
+    <ul class="d"> 
+        family 4    bu hocanın yöntemi ile yapılan     
+        <li> kadın 4</li>
+        <li> erkek 4</li>
+        <li> cocuk 4</li>
+    </ul>
+
+
+
+</body>
+
+</html>

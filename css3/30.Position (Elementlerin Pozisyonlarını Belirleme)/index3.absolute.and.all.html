@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .absolute{
+        position:absolute;
+    }
+        .base1{
+            width:40%;
+            height: 140px;
+            background-color: blue;
+        }
+        .base2{
+            width:35%;
+            height: 120px;
+            background-color: red;
+        }
+        .base3{
+            width:30%;
+            height: 100px;
+            background-color: yellow;
+        }
+        .position1{
+            right:0px;
+            top:0px;
+        }
+        
+        .a{
+          background-color: violet;
+          width: 300px;
+          height:500px;  
+        }
+        .b{
+            background-color: blue;
+            width: 250px;
+             height:100px; 
+             position:static;
+        }
+        .c{
+            background-color: red;
+            width: 250px;
+             height:100px; 
+        }
+        .d{
+            background-color: green;
+            width: 250px;
+             height:100px;          
+        }
+        .static{
+            position:static;
+        }
+        .e{
+            background-color: yellow;
+            width: 250px;
+             height:100px; 
+        }
+        .first{
+            background-color: pink;
+             height:100px; 
+             width: 100%;
+        }
+        .second{
+            background-color: brown;
+             height:100px; 
+        }
+        .denemesticky{
+            position: sticky;
+            top: 20px;
+            width: 100%;
+            height: 100px;
+            background-color: teal;
+        }
+        .denemefixed{
+            position: fixed;
+            bottom: 0px;
+
+            width: 100%;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<!--
+position:absolute;
+bu akışa göre gitmiyor üst üste yada alt alta nereye ne koymak
+istiyorsan oraya gider kalır üstüne yada altında kalır artık ne yapıyorsan
+mesela base3 ye absolute yazma sarı renk kırmızı ve mavinin altında kalır göremezsin.
+-->
+<body>
+    <div class="base1 absolute position1"></div>
+    <div class="base2 absolute position1"></div>
+    <div class="base3 absolute  position1"></div>
+
+    <div class="a">
+        <div class="b"></div>
+        <div class="c static"></div>
+        <div class="d static"></div>
+        <div class="e static"></div>
+
+    </div>
+<br> <br>
+    <div class="first"></div>
+    <div class="second"></div>
+
+    
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+
+    <!-- sticky test-->
+    <div class="denemesticky"></div>
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    
+    <!-- fixed test-->
+    <div class="denemefixed"></div>
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    
+
+
+</body>
+</html>

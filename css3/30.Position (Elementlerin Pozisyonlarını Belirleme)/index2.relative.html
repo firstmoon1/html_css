@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 30%;
+            height: 600px;
+            border: aqua;
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        .red {
+            background-color: red;
+            height:300px;
+            width:80%;
+        }
+        .purple {
+            background-color: purple;
+            width:40%;
+            height:100px;
+            left: 100px;
+            top: 100px;
+              
+        }
+        .relative{
+            position:relative;   
+        }
+        a {
+            font-size: x-large;
+        }
+        .black a {
+            color: black;
+        }
+        
+       
+    </style>
+</head>
+<!--
+    position:relative;
+    bunun olayı şudur ; eger position ile bir şeylerin yerini degiştirmek
+    istiyorsan relative yapıcaksın ,static yani default da degiştiremezsin.
+
+    biz class içine kelimeler şeklinde yada harf şeklinde 
+    coklu adresler paylaşabiliriz mesela class="purple fixed" gibi
+    
+    top:100px; yazmamızın amacı 100px aşagıya kaydırdık div i
+
+--> 
+
+<body>
+    <div class="red relative"  style="top:100px;">
+        
+        <div class="purple relative black">
+           <a href="#">anasayfa</a> <br>
+           <a href="#">kadınlar</a>
+        </div>
+    </div>
+    
+
+    
+    
+
+
+</body>
+
+</html>

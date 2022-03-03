@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            font-size:xx-large;
+           
+        }
+        .a{
+            text-decoration:line-through;
+        }
+        .a:link{
+            color:red;
+        }
+        .a:hover{
+            color:pink;
+            font-size: 60px;
+        }
+        .a:active{
+            color:green;
+            
+        }
+        .a:visited{
+            color:royalblue;
+        }
+
+
+        #b{
+            text-decoration:none;
+        }
+        #b:link{
+            color:red;
+        }
+        #b:hover{
+            color:pink;
+        }
+        #b:active{
+            color:green;
+            font-size: 50px;
+        }
+        #b:visited{
+            color:royalblue;
+        }
+
+        .c{
+            transition: 0.5s color linear;
+            font-size:150px;
+        }
+        .c:hover{
+            color:green;
+        }
+
+        /*
+        bunlar var css için link ,active,hover,visited
+        link: ilk halinini bu yazdıgın renkten yapıyor
+        hover: üzerine geldiginde rengi yazdıgın renk olur
+        active: basılı tuttugunda rengi yazdıgın renk olur
+        visited: tıkladıgında  sonra geri geldiginde felan rengi yazdıgın renk olur 
+        */
+    </style>
+
+</head>
+
+
+<body>
+    <br>
+    <a class="a" href="https://www.google.com.tr"> google</a>
+    <br>
+    <a id="b" href="http://www.google.com.tr"> google</a>
+    <br>
+    <a class="c" href="https://www.google.com.tr"> google</a>
+ 
+
+
+</body>
+</html>
