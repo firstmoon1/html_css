@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nineth</title>
+    <!-- ya burdan belirlersin  sıralı sırasız basında ne olucagını
+    yada body de ul içinde ama burda genel olarak hepsine
+uygulanıyor-->
+    <!--<style>
+        ul{
+            list-style: circle;
+        }
+        ol{
+            list-style: lower-roman;
+        }
+    </style>
+-->
+
+<!-- body deki fontsize ayarlama yazıların büyüklük kücüklük-->
+    <style>
+        body{
+            font-size:15px;
+        }
+
+    </style>
+    <!-- 
+        bu style içinde ul{ list-style-type: none } yazdıgında ul lerin başında nokta kare felan olmaz
+    -->
+</head>
+<body>
+    <!-- ul= düzensiz sırasız listler  ol= düzenli 1 2 3 a b c felanlistler-->
+   <!-- li= list item olarak geciyor  -->
+   <!-- ul de reversed ve start felan işe yaramaz cünkü sıralama yok-->
+    <h2>sırasız listler</h2>
+   <ul type="square"><!-- type="circle square felan int bakarsan bulurusn"  -->
+        <p style="font-size: larger;"  >programlama dilleri </p>
+        <li>c </li>
+        <li> c++</li>
+        <li> c# </li>
+    </ul>
+    <h2>sıralı listler</h2>
+    <!-- start = nerden başlaması gerektigini söylüyorsun
+    istersen yazma direk A dan başlasın -->
+    <!--reverse özelligi de var oda tersten başlatıyor-->
+    <ol start="2" type="A" > <!-- diyebilirsin type="a,A,1   -->
+        ön yüzde kullanılan programlar;
+        <li>HTML5</li>
+            <ol  start="5" type="I">
+                <li>eski html kodları</li>
+                <li>yeni html kodları</li>
+            </ol>
+        
+        <li>CSS3</li>
+        <li>javascript</li>
+
+    </ol>
+
+    <h2>sıralı listler</h2>
+    <!-- start = nerden başlaması gerektigini söylüyorsun
+    istersen yazma direk A dan başlasın -->
+    <!--reversed özelligi de var oda tersten başlatıyor-->
+    <ol reversed start="4" type="A" > <!-- diyebilirsin type="a,A,1   -->
+        ön yüzde kullanılan programlar;
+        <li>HTML5</li>
+            <ol  start="5" type="I">
+                <li>eski html kodları</li>
+                <li>yeni html kodları</li>
+            </ol>
+        
+        <li>CSS3</li>
+        <li>javascript</li>
+    </ol>
+    <hr>
+    <h1>deneme yaptım öylesine</h1>
+    <a href="https://www.google.com" style="text-decoration:none;"> 
+        <p style="font-size: xx-large; color: chocolate; font-style: italic; " title="ebru"> deneme 1</p>
+
+    </a>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fifteenth</title>
+    <style>
+        #deneme1{
+            border:2px solid red ;
+            color: blue;
+            width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form method="GET" > <!-- get yerine post yaz eger url'de 
+    gözükmesini istemiyorsan-->
+<!-- <form action="https://www.google.com"> gibi -->
+    <!-- bu action in olayı şu; oraya https://www.google.com 
+        yazsan ve send butonuna bassan seni google ana
+        sayfasına gönderir,
+        
+        text bildigin bir kutucuk yapıyor içine bir şeyler
+        yazarsın gönder ile gönderirsin sunucuya  url aracılıgı ile
+        
+        name: input text'e ilkay yazdıgında url de baktıgında
+        sana isim=ilkay yazısını gösterir
+        
+        bu action="" silip yerine method="GET" dersen url de gözükür
+        text ,password   sıklı sorular felan yaptıkların
+        eger gözükmesini istemiyorsan GET yerine POST yazarsın.
+
+        id nin olayı ise css de uzunluk renk,border felan vermede
+        kullanılıyor 
+
+        value ise url aracıgılı ile yazdıklarını sunucuya gönderir
+        mesela sıklı soru olsa orda tıklasan sunucuya value nin içinde 
+        olan yazı gider
+
+        1 den fazla defa aynı yazıyı kullanırsan ( mesela name="gender")
+        arasında secim yapar  yalnızca 1 tanesine tıklayabilirsin
+        bu sıklı sorudaki gibi, eger gender ve gender1
+        gibi farklı bir şey yazarsan sıklardan 2 sinede tıklayabilirsin
+         pearsondaki sorular gibi 2 tane dogru cevap vardır ikisinede
+         tıklarsın.
+    -->
+
+    <!-- <input type="text" name="isim" id="manyak" value="ilkay koc">
+     ya yukarıdaki gibi yaparsan  value ile yazı solid olur
+         yada alttaki gibi yaparsın yazı transparent olur-->
+        <br> <br>
+        <input type="text" name="isim" id="deneme" placeholder="enter a name">
+        <br> <br>
+        <input type="password" name="sifre" id="deneme1" placeholder="enter a password">
+        <!-- alttakinin olayıda submit kutucugu, value ilede
+        içine yazı yazıyoruz-->
+        <br> <br>
+        <input type="radio" name="gender" id="deneme2" value="man">erkek
+        <input type="radio" name="gender" id="deneme3" value="woman">kadın
+        <br> <br>
+        <select name="birthplace" id="mem">
+            <option value="kastamonu">kastamonu</option>
+            <option value="samsun">samsun</option>
+        </select>
+        <br> <br>
+        <!-- bu image felan eklediginde bunlar submit 
+        butonu gibi calışır ,fotoya tıkladıgında submit eder
+    -->
+        <input   type="image" src="imag/scarlet.jpg" width="200px" alt="no image">
+        <br> <br>
+        <input type="submit" value="send">
+
+</form>
+
+
+
+
+</body>
+</html>

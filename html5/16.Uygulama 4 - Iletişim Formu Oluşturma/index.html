@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim formu sayfası</title>
+</head>
+<body>
+    <!-- eger method="POST" yada GET yazmassan, bu ilk hali action
+     kalırsa otomatik GET  sayıyor,girdigin bilgiler url de gözükür
+    action in yanına method da yazabilirsin-->
+    <form action="" method="POST" >
+        İsim: <input type="text" name="name" id="nam" placeholder="isim">
+        <br> <br>
+        Soyisim: <input type="text" name="soyname" id="soynam" placeholder="soyadınızı giriniz...">
+        <br> <br>
+        Sevdiginiz spor: <input type="checkbox" name="spor" id="f" value="football" >futbol
+        <!-- bir alt satırda basketbol ile > arasına boşluk bırakırsan 1 defa ,internet sayfasında
+        boşluk bırakmıs olursun-->
+        <input type="checkbox" name="spor" id="b" value="basketball"> basketbol
+        <input type="checkbox" name="spor" id="v" value="voleyball">voleybol
+        <br> <br>
+        Cinsiyet <input type="radio" name="cinsiyet" id="sp" value="man">Erkek
+        <input type="radio" name="cinsiyet" id="ra" value="voman">Kadın
+        <p>Guvenlik sorusu: Türkiyenin başkenti neresidir?</p>
+        <select name="capital" id="cap"  >
+            <option value="empty" > lütfen bir cevap seçiniz... </option>
+            <option value="ankara">ankara</option>
+            <option value="izmir">izmir</option>
+            <option value="istanbul">istanbul</option>
+        </select>
+        <br> <br>
+    <input type="submit" value="Kayıt ol">
+    <input type="reset" value="temizle bitch">
+    </form>
+
+</body>
+</html>
